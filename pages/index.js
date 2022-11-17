@@ -105,7 +105,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className={styles.container}>
+    <div className="scroll-smooth transition-all">
       <Head>
         <title>Home</title>
       </Head>

@@ -22,7 +22,7 @@ export default function InstragramPosts({ posts }) {
 								link={p.link}
 							/>
 						) : (
-							<div className="mt-[100px] ">
+							<div className="mt-[75px] ">
 								<Post
 									img={p.img}
 									title="Follow For More"

@@ -7,7 +7,7 @@ export default function Blogs({ blogs }) {
 		wrapper: "w-screen bg-pink text-center px-[75px] py-[30px] ",
 		title: `font-["Arapey"]  text-[64px] leading-[70px] mb-[90px]  `,
 		subHeading: `w-[560px] text-[18px] leading-loose my-[25px] font-["Noto_Sans"]  `,
-		articles: `flex gap-[120px] flex-wrap  justify-center lg:flex-nowrap shrink `,
+		articles: `flex gap-10 flex-wrap  justify-center lg:flex-nowrap shrink `,
 		btn: `flex w-fit m-[50px] text-[#382E53] font-medium ml-auto `,
 		icon: `w-5 h-5 my-auto h-fit  `,
 	};

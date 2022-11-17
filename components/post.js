@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Post({ title, date, year, img }) {
 	const styles = {
-		wrapper: "lg:flex shrink gap-5 my-10 lg:h-[450px]  ",
+		wrapper: "lg:flex shrink gap-5 my-2 lg:h-[450px]  ",
 		main: `   p-10 rounded-[10px]  h-full bg-[#CEB89E88] flex bg-cover flex-wrap `,
 		animation:
 			" cursor-pointer w-full h-full flex flex-wrap transition-all",

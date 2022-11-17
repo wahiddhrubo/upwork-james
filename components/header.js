@@ -42,7 +42,7 @@ export default function Header({
 							</div>
 						</div>
 					</Link>
-					<Link href="#cta">
+					<Link href="#cta" scroll={false}>
 						<AiOutlineArrowDown className={styles.icon} />
 					</Link>
 				</div>

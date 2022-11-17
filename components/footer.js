@@ -1,6 +1,8 @@
 import { BsFillPlayFill } from "react-icons/bs";
 import Link from "next/link";
 import Navbar from "./navbar.js";
+import { useState } from "react";
+
 export default function Header({
 	logo,
 	companyLinkList,
@@ -9,6 +11,14 @@ export default function Header({
 	termLink,
 	privacyLink,
 }) {
+	const [email, setEmail] = useState("");
+	const subscribe = () => {
+		if (!isValidEmail(email)) {
+			alert("Not a Valid Email");
+		} else {
+			alert("Subscribed Succeessfully");
+		}
+	};
 	const styles = {
 		wrapper:
 			" justify-center gap-10  text-center  lg:w-[1050px] mx-auto shrink lg:flex p-10 lg:p-[50px]  ",
@@ -77,8 +87,13 @@ export default function Header({
 								type="email"
 								placeholder="email"
 								className={styles.input}
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
 							/>
-							<div className="cursor-pointer underline capitalize text-[14px] ">
+							<div
+								className="cursor-pointer underline capitalize text-[14px] "
+								onClick={subscribe}
+							>
 								Sign up for newsletter
 							</div>
 						</div>
@@ -101,3 +116,7 @@ export default function Header({
 		</div>
 	);
 }
+
+export const isValidEmail = (email) => {
+	return /\S+@\S+\.\S+/.test(email);
+};
