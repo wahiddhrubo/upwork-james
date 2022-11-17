@@ -4,6 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+:root {
+  --pink: #e7aeac;
+  --blue: #2b3163;
+  --light-blue: #d0e7df;
+  --text-base: #000000;
+  --text-primary: #000000;
+  --text-secondary: white;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

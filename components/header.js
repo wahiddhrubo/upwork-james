@@ -14,7 +14,7 @@ export default function Header({
 		wrapper: "h-fit m-auto",
 		title: `font-["Arapey"] pt-[120px] lg:text-[64px] text-5xl leading-[70px] `,
 		subHeading: `lg:w-[560px] text-[18px] leading-loose my-[25px] font-["Noto_Sans"]  `,
-		button: "bg-[#25313C] w-[365px] m-auto h-[55px] shadow-xl flex font-['Montserrat'] ",
+		button: "bg-blue w-[365px] m-auto h-[55px] shadow-xl flex font-['Montserrat'] ",
 		icon: "h-8 w-8 text-white mt-[120px] mx-auto animate-bounce ",
 	};
 	return (

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function InstragramPosts({ posts }) {
 	const styles = {
 		wrapper:
-			"w-screen bg-[#2B3163] text-center px-[75px] py-[30px] lg:grid flex flex-wrap gap-10 grid-cols-3 ",
+			"w-screen bg-blue text-center px-[75px] py-[30px] lg:grid flex flex-wrap gap-10 grid-cols-3 ",
 	};
 	return (
 		<div>

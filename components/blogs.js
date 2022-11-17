@@ -4,7 +4,7 @@ import { MdNavigateNext } from "react-icons/md";
 
 export default function Blogs({ blogs }) {
 	const styles = {
-		wrapper: "w-screen bg-[#E7AEAC] text-center px-[75px] py-[30px] ",
+		wrapper: "w-screen bg-pink text-center px-[75px] py-[30px] ",
 		title: `font-["Arapey"]  text-[64px] leading-[70px] mb-[90px]  `,
 		subHeading: `w-[560px] text-[18px] leading-loose my-[25px] font-["Noto_Sans"]  `,
 		articles: `flex gap-[120px] flex-wrap  justify-center lg:flex-nowrap shrink `,

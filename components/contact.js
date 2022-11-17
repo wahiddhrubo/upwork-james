@@ -1,12 +1,12 @@
 export default function InputForm({}) {
 	const styles = {
-		wrapper: `bg-[#E7AEAC] text-center lg:p-[70px] p-10 `,
+		wrapper: `bg-pink text-center lg:p-[70px] p-10 `,
 		title: `font-["Poppins"] mt-[90px] lg:text-[64px] text-5xl font-semibold leading-[70px] lg:mb-[90px] mb-20  `,
 		formWrapper: `flex lg:w-[1160px] justify-between mx-auto gap-5 flex-wrap  font-["Montserrat"] `,
 		inputDiv: `w-[565px]  shrink`,
 		inputDivFull: `w-full `,
 		input: ` border-[#717171] w-full text-black bg-transparent px-3 py-3 placeholder-opacity-100 placeholder:capitalize placeholder:text-black  border-b-2`,
-		submit: "h-[90px] w-[150px] shadow-xl bg-[#2B3163] mt-[90px] rounded-[15px] font-bold text-white mx-auto ",
+		submit: "h-[90px] w-[150px] shadow-xl bg-blue mt-[90px] rounded-[15px] font-bold text-white mx-auto ",
 	};
 	const submitHander = (e) => {
 		e.preventDefault();
