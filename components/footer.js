@@ -21,17 +21,17 @@ export default function Header({
 	};
 	const styles = {
 		wrapper:
-			" justify-center gap-10  text-center  lg:w-[1050px] mx-auto shrink lg:flex p-10 lg:p-[50px]  ",
+			" justify-center gap-10  text-center text-black lg:w-[1180px] mx-auto shrink lg:flex p-10 lg:p-[50px]  ",
 		logoDiv: "lg:w-1/3 lg:text-left ",
 		logo: `font-["Arapey"]  text-[64px] leading-[70px] `,
-		subHeading: ` text-[18px] leading-[1.5] font-semibold my-[5px] font-["Montserrat"]  `,
+		subHeading: ` text-[18px] leading-[1.5] font-semibold my-2 font-["Montserrat"]  `,
 		iconWrapper:
-			"p-2 rounded-md text-white bg-black w-fit lg:ml-auto lg:mr-0 mx-auto my-10 lg:my-0 ",
-		menuDiv: `lg:w-2/3`,
-		menus: `flex shrink gap-20 text-left font-['Arapey'] text-[16px] uppercase `,
-		menuItems: "text-[14px] mb-1 capitalize",
-		newsletter: `lg:w-1/3 font-['Arapey'] lg:text-left text-[16px] uppercase w-fit mx-auto`,
-		input: `  w-full text-black bg-white p-3 my-2 h-[40px] placeholder-opacity-100 placeholder:capitalize placeholder:text-black  `,
+			"p-2 rounded-md text-white bg-black w-fit  absolute ml-auto mt-auto inset-x-0 mt-[-1px] ",
+		menuDiv: `lg:w-2/3 h-fit my-auto`,
+		menus: `flex shrink lg:gap-20 text-left font-['Arapey'] gap-10 my-5 lg:my-0 text-[16px] uppercase `,
+		menuItems: "text-[14px] mb-3 capitalize",
+		newsletter: `lg:w-1/3 font-['Arapey'] w-3/5 relative lg:text-left text-[16px] uppercase w-fit mx-auto`,
+		input: `  w-full text-black bg-white p-3 h-[40px] placeholder-opacity-100 placeholder:capitalize placeholder:text-black  `,
 	};
 	return (
 		<div className="w-screen bg-light-blue">
@@ -44,14 +44,10 @@ export default function Header({
 					</div>
 				</div>
 				<div className={styles.menuDiv}>
-					<div className={styles.iconWrapper}>
-						<BsFillPlayFill size={25} />
-					</div>
-
 					<div className="flex flex-wrap lg:flex-nowrap justify-center shrink  gap-10">
 						<div className={styles.menus}>
 							<div className={styles.menuList}>
-								<div className="pb-2">company</div>
+								<div className="pb-5">company</div>
 								{companyLinkList.map((l) => (
 									<Link href={l.link} key={l.id}>
 										<div className={styles.menuItems}>
@@ -61,7 +57,7 @@ export default function Header({
 								))}
 							</div>
 							<div className={styles.menuList}>
-								<div className="pb-2">connect</div>
+								<div className="pb-5">connect</div>
 								{connectLinkList.map((l) => (
 									<Link href={l.link} key={l.id}>
 										<div className={styles.menuItems}>
@@ -71,7 +67,7 @@ export default function Header({
 								))}
 							</div>
 							<div className={styles.menuList}>
-								<div className="pb-2">expert</div>
+								<div className="pb-5">expert</div>
 								{expertLinkList.map((l) => (
 									<Link href={l.link} key={l.id}>
 										<div className={styles.menuItems}>
@@ -83,24 +79,29 @@ export default function Header({
 						</div>
 						<div className={styles.newsletter}>
 							Stay Up to Date
-							<input
-								type="email"
-								placeholder="email"
-								className={styles.input}
-								value={email}
-								onChange={(e) => setEmail(e.target.value)}
-							/>
 							<div
-								className="cursor-pointer underline capitalize text-[14px] "
+								className="cursor-pointer my-2 underline capitalize text-[14px] "
 								onClick={subscribe}
 							>
 								Sign up for newsletter
+							</div>
+							<div className="my-2">
+								<div className={styles.iconWrapper}>
+									<BsFillPlayFill size={25} />
+								</div>
+								<input
+									type="text"
+									placeholder="email"
+									className={styles.input}
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+								/>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="flex lg:w-[1050px] mx-auto p-[50px]">
+			<div className="flex lg:w-[1180px] mx-auto p-10">
 				<div className="mr-auto text-[16px]">
 					2020 - Logo - All rights reserved
 				</div>

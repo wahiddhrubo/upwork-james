@@ -6,14 +6,13 @@ import { BsDiagram3Fill } from "react-icons/bs";
 
 export default function Services({}) {
 	const styles = {
-		wrapper: `text-center font-["Inter"] px-[50px] py-[70px] `,
+		wrapper: `text-center font-["Inter"] bg-white text-black lg:w-[1180px] mx-auto px-[50px] py-[70px] `,
 		title: `text-[64px] leading-[70px] my-[90px]  `,
-		services:
-			"flex justify-center lg:text-left shrink gap-[120px] flex-wrap ",
-		serviceDiv: "w-[380px]  ",
+		services: "flex justify-center lg:text-left shrink gap-20  flex-wrap ",
+		serviceDiv: "lg:w-[300px]  ",
 		iconWrapper: "p-5 rounded-full w-fit mx-auto lg:mr-auto lg:ml-0 ",
 		icon: " ",
-		iconTitle: "",
+		iconTitle: "font-semibold text-lg my-2 ",
 		iconDesciption: "",
 	};
 	const ServicesList = [

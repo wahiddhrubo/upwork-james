@@ -105,7 +105,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="scroll-smooth transition-all">
+    <div className="scroll-smooth transition-all bg-white text-black overflow-x-hidden">
       <Head>
         <title>Home</title>
       </Head>
