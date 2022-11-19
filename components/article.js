@@ -24,6 +24,7 @@ export default function Article({ img, title, link, description }) {
 	return (
 		<div className={styles.wrapper}>
 			<Image
+				alt={title ? title : ""}
 				src={img ? img : "/blog-image.jpg"}
 				width={385}
 				height={185}

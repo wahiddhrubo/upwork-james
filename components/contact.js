@@ -80,8 +80,6 @@ export default function InputForm({}) {
 		errors.includes(f.id) ? "Please Fill This Field" : "Required";
 	};
 
-	console.log(formik.values);
-
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.title}>LET’S WORK TOGETHER</div>

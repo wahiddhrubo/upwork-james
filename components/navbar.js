@@ -13,36 +13,45 @@ export default function Navbar({ services, contact, about, research, logo }) {
 		<div className={styles.wrapper}>
 			<div className="lg:block hidden">
 				<div>
-					<a className={styles.links}>
-						<Link href={services ? services : "/services"}>
-							Services
-						</Link>
-					</a>
-					<a className={styles.links}>
-						<Link href={contact ? contact : "/contact"}>
-							Contact
-						</Link>
-					</a>
+					<Link
+						className={styles.links}
+						href={services ? services : "/services"}
+					>
+						Services
+					</Link>
+
+					<Link
+						className={styles.links}
+						href={contact ? contact : "/contact"}
+					>
+						Contact
+					</Link>
+
 					<a className={styles.logo}>
 						{logo ? <Image src={logo} /> : "LOGO"}
 					</a>
-					<a className={styles.links}>
-						<Link href={about ? about : "/about"}>About</Link>
-					</a>
-					<a className={styles.links}>
-						<Link href={research ? research : "/research"}>
-							Research
-						</Link>
-					</a>
+					<Link
+						className={styles.links}
+						href={about ? about : "/about"}
+					>
+						About
+					</Link>
+
+					<Link
+						className={styles.links}
+						href={research ? research : "/research"}
+					>
+						Research
+					</Link>
 				</div>
 			</div>
 			<div className={styles.mobileMenu}>
 				<a className={styles.logo}>
 					{logo ? <Image src={logo} /> : "LOGO"}
 				</a>
-				<div className="ml-auto">
+				{/*	<div className="ml-auto">
 					<Hamburger />
-				</div>
+				</div>*/}
 			</div>
 		</div>
 	);

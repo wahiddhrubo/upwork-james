@@ -92,45 +92,50 @@ export default function Home() {
   //example footer link list
   const linkList = [
     {
+      id: "1",
       text: "Home",
       link: "/",
     },
     {
+      id: "2",
       text: "Home",
       link: "/",
     },
     {
+      id: "3",
       text: "Home",
       link: "/",
     },
   ];
   return (
-    <div className="scroll-smooth transition-all bg-white text-black overflow-x-hidden">
+    <>
       <Head>
         <title>Home</title>
-      </Head>
-      <Header
-        //image file link
-        img=""
-        //Header heading title
-        title="Realtor Serving You"
-        //button link
-        link="#button-link"
-        //Sub Heading Text
-        subHeading="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu"
-        //Button text
-        buttonText="Click Now"
-      />
-      <Services />
-      <Blogs blogs={exampleBlogs} />
-      <Instagram posts={examplePosts} />
-      <CtaForm />
-      <Contact />
-      <Footer
-        expertLinkList={linkList}
-        companyLinkList={linkList}
-        connectLinkList={linkList}
-      />
-    </div>
+      </Head>{" "}
+      <div className="scroll-smooth transition-all bg-white text-black overflow-x-hidden">
+        <Header
+          //image file link
+          img=""
+          //Header heading title
+          title="Realtor Serving You"
+          //button link
+          link="#button-link"
+          //Sub Heading Text
+          subHeading="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu"
+          //Button text
+          buttonText="Click Now"
+        />
+        <Services />
+        <Blogs blogs={exampleBlogs} />
+        <Instagram posts={examplePosts} />
+        <CtaForm />
+        <Contact />
+        <Footer
+          expertLinkList={linkList}
+          companyLinkList={linkList}
+          connectLinkList={linkList}
+        />
+      </div>
+    </>
   );
 }

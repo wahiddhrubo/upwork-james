@@ -23,32 +23,36 @@ export default function Hamburger(services, contact, about, research) {
 			<nav className={styles.navigation__nav} role="navigation">
 				<ul className={styles.navigation__list}>
 					<li className={styles.navigation__item}>
-						<a href="#" className={styles.navigation__link}>
-							<Link href={services ? services : ""}>
-								<span className="">Services</span>
-							</Link>
-						</a>
+						<Link
+							className={styles.navigation__link}
+							href={services ? services : ""}
+						>
+							<span className="">Services</span>
+						</Link>
 					</li>
 					<li className={styles.navigation__item}>
-						<a href="#" className={styles.navigation__link}>
-							<Link href={contact ? contact : ""}>
-								<span className="">Contact</span>
-							</Link>
-						</a>
+						<Link
+							className={styles.navigation__link}
+							href={contact ? contact : ""}
+						>
+							<span className="">Contact</span>
+						</Link>
 					</li>
 					<li className={styles.navigation__item}>
-						<a href="#" className={styles.navigation__link}>
-							<Link href={about ? about : ""}>
-								<span className="">About</span>
-							</Link>
-						</a>
+						<Link
+							className={styles.navigation__link}
+							href={about ? about : ""}
+						>
+							<span className="">About</span>
+						</Link>
 					</li>
 					<li className={styles.navigation__item}>
-						<a href="#" className={styles.navigation__link}>
-							<Link href={research ? research : ""}>
-								<span className="">Research</span>
-							</Link>
-						</a>
+						<Link
+							className={styles.navigation__link}
+							href={research ? research : ""}
+						>
+							<span className="">Research</span>
+						</Link>
 					</li>
 				</ul>
 			</nav>

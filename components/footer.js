@@ -1,6 +1,5 @@
 import { BsFillPlayFill } from "react-icons/bs";
 import Link from "next/link";
-import Navbar from "./navbar.js";
 import { useState } from "react";
 
 export default function Header({
